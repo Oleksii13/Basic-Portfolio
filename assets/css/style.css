@@ -23,32 +23,7 @@ header{
     display: flex;
     justify-content: space-evenly;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    
 }
-
-
-
-section{
-   
-    width:100%;
-   
-    
-    background-image:url("../images/xv.png");
-    flex: auto;
-   
-    
-    
-}
-article{
-    position: relative;
-    width:960px;
-    
-    margin:100px auto;
-    font-size:20px;
-    border:0.5px solid #cccccc;
-    background-color: #fff;
-}
-
 .hed{
     width:960px;
     display:inline-block;
@@ -69,8 +44,7 @@ nav{
     float:right;
     margin:auto;
     padding-top:35px;
-    height: 100%;
-    
+    height: 100%; 
 }
 
 h1, nav{
@@ -102,29 +76,76 @@ ul a{
     padding: 40px 5px;
     color:#777;
 }
+
 ul a:hover{
     color:#4aaaa5;
 }
+
+
+/* SECTION PART */
+section{
+    width:100%;
+    background-image:url("../images/xv.png");
+    flex: auto;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+
+    position: relative;
+   
+
+    
+}
+
+/* I need to play with  */
+
+article{
+    /* padding: 1em 0 1.5em 0; */
+    font-size:20px;
+    border:0.5px solid #ddd;
+    background-color: #fff;
+    display:block;
+    width:960px;
+    height: 600px;
+
+
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    
+
+   
+    
+}
+
+
 
 h2{
     margin:25px;
     color:#4aaaa5;
 }
+
 hr{
     margin:25px;
     color:#777;
 }
-img{
-   float:left; 
-   margin:0 25px;
 
+.face{
+   float:left;
+   margin:25px;
+   margin-top:0;
+   
 }
+
 .text{
     margin:25px;
     color:#777;
     text-align: justify;
+    
 }
 
+/* FOOTER PART */
 footer{
    
     padding-top:10px;
@@ -132,13 +153,100 @@ footer{
     width: 100%;
     position:sticky;
     bottom:0;
-   
     background-color:#4aaaa5;
 }
+
 footer p{
     background-color:#666;
-    color:#777;
+    color:#ccc;
     margin:0;
     padding:25px;
+}
+
+/* CSS for Contact */
+
+form{
+    display:flex;
+    flex-direction: column;
+    margin: 0 20px;
+    color:#777;
+    background-color: #fff;
     
+    
+}
+
+input{
+    margin:0;
+    padding:7px;
+    max-width:900px;
+    min-width:900px;
+
+}
+label{
+    margin:10px 0 5px 0;
+}
+
+
+
+textarea{
+    
+    margin: 0;
+    padding: 7px;
+    max-width:900px;
+    min-width:900px;
+    height: 15em;
+}
+
+/* I saw input type submit */
+button{
+    padding:8px;
+    background-color: #4aaaa5;
+    width:10%;
+    border:none;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+
+
+
+/* CSS for portfolio */
+
+.center-grid{
+    text-align: center;
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns:auto auto auto;
+    grid-gap:50px;
+    
+
+   
+    
+    
+}
+.cont-img{
+    position: relative;
+    
+   
+}
+img{
+    margin:0;
+  
+}
+
+span{
+    color:#fff;
+   background-color: #4aaaa5;
+   width: 100%;
+   padding: 10px 0 ;
+   
+    position: absolute;
+    top:80%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
 }
