@@ -1,313 +1,208 @@
-html, body{
-    
-   height:100%;
-    margin: 0;
-    padding: 0;
-    
-    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-  }
-  body{
-      display:flex;
-      flex-direction: column;
-       /* overflow: auto; */
-  }
- 
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 
-header{
-    width:100%;
-    height:70px;
-    /* position: relative;
-    top:0; */
-
-
-    /* height:auto; */
-    /* height:100px; */
-    background-color: #ffffff;
-    z-index: 2;
-    border-bottom: 1px solid #cccccc;
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
-    
+  font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
 }
-.hed{
-    width:960px;
-    display:flex;
-    justify-content: space-between;
-    
-    
-   
-    
-    /* height: 10%; */
-    /* display:block; */
+body {
+  display: flex;
+  flex-direction: column;
 }
 
-
-
-h1{
-   background-color:#4aaaa5;
-   color:#fff;
-   margin:0;
-   
-   
-   padding:0 25px;
-   
-  
-  /* text-align: center; */
-   /* justify-content: center; */
-   display: flex;
- 
-    align-items: center;
-   height:100%;
-    
-   
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #ffffff;
+  z-index: 2;
+  border-bottom: 1px solid #cccccc;
+  display: flex;
+  justify-content: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-nav{
-    /* float:right;
-    margin:auto; */
-    /* padding-top:35px; */
-    /* height: 100%;  */
-    margin:0;
-    display: flex;
- 
-    align-items: center;
-    
-    
-    
-
+.hed {
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
 }
 
-/* h1, nav{
-    display:inline-block;
-} */
+h1 {
+  background-color: #4aaaa5;
+  color: #fff;
+  margin: 0;
 
-ul{
-    display: flex;
-    flex-direction: row;
-    list-style-type:none;
-    margin: 0;
-    padding: 0;
-    /* display: inline-block; */
-    /* right:0; */
-    cursor: pointer;
+  padding: 0 25px;
+  display: flex;
+
+  align-items: center;
+  height: 100%;
+}
+nav {
+  margin: 0;
+  display: flex;
+
+  align-items: center;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
 }
 li {
-    
-    padding:0 10px;
+  padding: 0 10px;
 }
 
-li + li{
-    border-left: 1px solid #777;
-    
-    
+li + li {
+  border-left: 1px solid #777;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-ul a{
-    
-    font-size: 20px;
-    /* text-align: center; */
-    /* margin:auto; */
-    /* padding: 40px 5px; */
-    
-    color:#777;
+ul a {
+  font-size: 20px;
+  color: #777;
 }
 
-ul a:hover{
-    color:#4aaaa5;
+ul a:hover {
+  color: #4aaaa5;
 }
-
 
 /* SECTION PART */
-section{
-    width:100%;
-    background-image:url("../images/xv.png");
-    flex: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* float: left; */
-    overflow: auto;
+section {
+  width: 100%;
+  background-image: url("../images/xv.png");
+  flex: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    /* position: relative; */
-   
-
-    
+  overflow: auto;
 }
 
 /* I need to play with  */
 
-article{
-    padding: 1em 0 1.5em 0;
-    font-size:20px;
-    border:0.5px solid #ddd;
-    background-color: #fff;
-    display:block;
-    width:960px;
-z-index: 1;
-    /* flex-shrink:auto; */
-    /* overflow: auto; */
-    /* height: 600px; */
-    
-
-
-    /* position: fixed;
-    top:40%;
-    left:50%;
-    transform: translate(-50%, -50%);
-     */
-
-   
-    
+article {
+  padding: 1em 0 1.5em 0;
+  
+  font-size: 20px;
+  border: 0.5px solid #ddd;
+  background-color: #fff;
+  display: block;
+  width: 960px;
+  z-index: 1;
 }
 
-
-
-h2{
-    margin:25px;
-    color:#4aaaa5;
+h2 {
+  margin: 25px;
+  color: #4aaaa5;
 }
 
-hr{
-    margin:25px;
-    color:#777;
+hr {
+  margin: 25px;
+  color: #777;
 }
 
-.face{
-   float:left;
-   margin:25px;
-   margin-top:0;
-   
+.face {
+  float: left;
+  margin: 25px;
+  margin-top: 0;
 }
 
-.text{
-    margin:25px;
-    color:#777;
-    text-align: justify;
-    
+.text {
+  margin: 25px;
+  color: #777;
+  text-align: justify;
 }
 
 /* FOOTER PART */
-footer{
-   
-    padding-top:10px;
-    text-align: center;
-    width: 100%;
-    position:sticky;
-    bottom:0;
-    background-color:#4aaaa5;
+footer {
+  padding-top: 10px;
+  text-align: center;
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  background-color: #4aaaa5;
 }
 
-footer p{
-    background-color:#666;
-    color:#ccc;
-    margin:0;
-    padding:25px;
+footer p {
+  background-color: #666;
+  color: #ccc;
+  margin: 0;
+  padding: 25px;
 }
 
 /* CSS for Contact */
 
-form{
-    display:flex;
-    flex-direction: column;
-    margin: 0 20px;
-    color:#777;
-    background-color: #fff;
-    
-    
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 32px;
+  color: #777;
+  background-color: #fff;
 }
 
-input{
-    margin:0;
-    padding:7px;
-    max-width:900px;
-    min-width:900px;
-
+input {
+  margin: 0;
+  padding: 7px;
+  width: 100%;
+  box-sizing: border-box;
 }
-label{
-    margin:10px 0 5px 0;
+label {
+  margin: 9px 0 5px 0;
 }
 
+textarea {
+  margin: 0;
+  padding: 7px;
+  width: 100%;
 
-
-textarea{
-    
-    margin: 0;
-    padding: 7px;
-    max-width:900px;
-    min-width:900px;
-    height: 15em;
+  height: 15em;
+  box-sizing: border-box;
 }
 
 /* I saw input type submit */
-button{
-    padding:8px;
-    background-color: #4aaaa5;
-    width:10%;
-    border:none;
-    color: #fff;
-    font-weight: 600;
+button {
+  padding: 8px;
+  background-color: #4aaaa5;
+  width: 10%;
+  border: none;
+  color: #fff;
+  font-weight: 600;
 }
-
-
-
-
 
 /* CSS for portfolio */
 
-.center-grid{
-    text-align: center;
-    margin-top:30px;
-    
+.center-grid {
+  text-align: center;
+  margin-top: 30px;
 }
 
 .grid-container {
-    display: inline-grid;
-    grid-template-columns:auto auto auto;
-    grid-gap:50px;
-    
-   
-    
-
-   
-    
-    
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 50px;
 }
-.cont-img{
-    /* position: relative; */
-    display: flex;
-    flex-direction: column;
-    /* position: relative; */
-    /* overflow: auto; */
-    
-   
+.cont-img {
+  display: flex;
+  flex-direction: column;
 }
-img{
-    margin:0;
-    z-index: 1;
-  
-  
+img {
+  margin: 0;
+  z-index: 1;
 }
+span {
+  color: #fff;
+  background-color: #4aaaa5;
+  width: 100%;
+  z-index: 2;
+  padding: 10px 0;
 
-span{
-    color:#fff;
-   background-color: #4aaaa5;
-   width: 100%;
-   z-index:2;
-   padding: 10px 0 ;
-   
-    position: relative;
-    bottom:50px;;
-    /* left: 50%; */
-     
-    
-    /* transform: translate(-50%, -50%); */
-    /* text-align: center; */
-    
-
+  position: relative;
+  bottom: 50px;
 }
